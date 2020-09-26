@@ -933,6 +933,9 @@
 			    hash: true,
 			    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			    // Change the size of our presentation
+			    document.querySelector( '.reveal' ).style.width = '50vw';
+			    // Make reveal.js aware of the size change
+			    Reveal.layout();
 		    });
 	</script>
 
