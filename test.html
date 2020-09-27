@@ -16,7 +16,7 @@
 	<body style="background: black;">
 
 		<div style="display: flex; flex-direction: column;">
-			<div class="reveal deck1" style="width: 100%; height: 50vh; margin: 10px;">
+			<div class="reveal deck1" style="width: 100%; height: 50vh;">
 				<div class="slides">
 					<section>Deck 1, Slide 1</section>
 					<section>Deck 1, Slide 2</section>
@@ -53,7 +53,7 @@
 
 		<style>
 			.reveal {
-				border: 4px solid #ccc;
+				border: 2px solid #ccc;
 			}
 			.reveal.focused {
 				border-color: #94b5ff;
@@ -69,6 +69,7 @@
 			let deck1 = new Reveal( document.querySelector( '.deck1' ), {
 				embedded: true,
 				progress: false,
+				transition: 'slide',
 				keyboardCondition: 'focused',
 				plugins: [ RevealHighlight ]
 			} );
@@ -80,6 +81,7 @@
 			let deck2 = new Reveal( document.querySelector( '.deck2' ), {
 				embedded: true,
 				progress: false,
+				transition: 'fade',
 				keyboardCondition: 'focused',
 				plugins: [ RevealMarkdown ]
 			} );
