@@ -13,9 +13,9 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 
-	<body style="background: #ddd;">
+	<body style="background: black;">
 
-		<div style="display: flex; flex-direction: row;">
+		<div style="display: flex; flex-direction: column;">
 			<div class="reveal deck1" style="width: 100%; height: 50vh; margin: 10px;">
 				<div class="slides">
 					<section>Deck 1, Slide 1</section>
@@ -46,12 +46,6 @@
 					</section>
 					<section>
 						<h3>The Lorenz Equations</h3>
-
-						\[\begin{aligned}
-						\dot{x} &amp; = \sigma(y-x) \\
-						\dot{y} &amp; = \rho x - y - xz \\
-						\dot{z} &amp; = -\beta z + xy
-						\end{aligned} \]
 					</section>
 				</div>
 			</div>
@@ -87,7 +81,7 @@
 				embedded: true,
 				progress: false,
 				keyboardCondition: 'focused',
-				plugins: [ RevealMarkdown, RevealMath ]
+				plugins: [ RevealMarkdown ]
 			} );
 			deck2.initialize().then( () => {
 				deck2.slide(1);
