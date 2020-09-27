@@ -31,7 +31,7 @@
 				</div>
 			</div>
 
-			<div class="reveal deck2" style="width: 90%; height: 50vh; margin: 10px;">
+			<div class="reveal deck2" style="width: 90%; height: 50vh;">
 				<div class="slides">
 					<section>Deck 2, Slide 1</section>
 					<section>Deck 2, Slide 2</section>
@@ -63,7 +63,6 @@
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/math/math.js"></script>
 		<script>
 
 			let deck1 = new Reveal( document.querySelector( '.deck1' ), {
@@ -71,7 +70,6 @@
 				progress: false,
 				transition: 'slide',
 				keyboardCondition: 'focused',
-				center: true,
 				plugins: [ RevealHighlight ]
 			} );
 			deck1.on( 'slidechanged', () => {
@@ -85,6 +83,7 @@
 				transition: 'slide',
 				keyboardCondition: 'focused',
 				center: true,
+				margin: 0.04,
 				plugins: [ RevealMarkdown ]
 			} );
 			deck2.initialize().then( () => {
