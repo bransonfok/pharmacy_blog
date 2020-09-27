@@ -16,7 +16,7 @@
 	<body style="background: black;">
 
 		<div style="display: flex; flex-direction: column;">
-			<div class="reveal deck1" style="width: 100%; height: 50vh;">
+			<div class="reveal deck1" style="width: 80%; height: 50vh;">
 				<div class="slides">
 					<section>Deck 1, Slide 1</section>
 					<section>Deck 1, Slide 2</section>
@@ -31,7 +31,7 @@
 				</div>
 			</div>
 
-			<div class="reveal deck2" style="width: 100%; height: 50vh; margin: 10px;">
+			<div class="reveal deck2" style="width: 90%; height: 50vh; margin: 10px;">
 				<div class="slides">
 					<section>Deck 2, Slide 1</section>
 					<section>Deck 2, Slide 2</section>
@@ -81,7 +81,7 @@
 			let deck2 = new Reveal( document.querySelector( '.deck2' ), {
 				embedded: true,
 				progress: false,
-				transition: 'fade',
+				transition: 'slide',
 				keyboardCondition: 'focused',
 				plugins: [ RevealMarkdown ]
 			} );
